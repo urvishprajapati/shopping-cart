@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+        <div class="main-product">
+            <h2>Select Main Product:</h2>
+            <select id="mainProduct">
+                <option value="">Select a product</option>
+                <option value="bottle">Bottle</option>
+                <option value="bag">Bag</option>
+                <option value="cricketBat">Cricket Bat</option>
+                <option value="tshirt">T-Shirt</option>
+                <option value="pant">Pant</option>
+            </select>
+        </div>
+
+        <div class="products" id="productList"></div>
+
+        <button id="addToCart">Add to Cart</button>
+        
+        <div class="final-bill">
+            <h2>Final Bill: <span id="totalBill">$0</span></h2>
+        </div>
+
+        <div class="payment-method">
+            <h3>Select Payment Method:</h3>
+            <select id="paymentMethod">
+                <option value="Credit Card">Credit Card</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+            </select>
+        </div>
+
+        <!-- Payment button to be centered -->
+        <div class="payment-button-container">
+            <button id="proceedToPayment">Proceed to Payment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

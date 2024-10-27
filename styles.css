@@ -1,0 +1,162 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    color: #444;
+}
+
+/* Product Dropdown */
+.main-product select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+.main-product select:focus {
+    border-color: #ff5722;
+}
+
+/* Products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product {
+    flex: 1 1 calc(45% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    color: #ff5722;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.quantity {
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+.quantity:focus {
+    border-color: #ff5722;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff5722, #ff7043);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff7043, #ff8a65);
+    transform: scale(1.05);
+}
+
+/* Final Bill Section */
+.final-bill {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Payment Method Section */
+.payment-method {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-method select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.payment-method select:focus {
+    border-color: #ff5722;
+}
+
+/* Payment Button Container */
+.payment-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Hover Effects and Transitions */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
